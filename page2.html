@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Onkar</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #ffe6f0, #ffffff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Card */
+.calendar-card{
+    background:#ffffff;
+    width:95%;
+    max-width:700px;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(233, 30, 99, 0.15);
+    text-align:center;
+}
+
+/* Title */
+.calendar-card h1{
+    color:#e91e63;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+/* Week names */
+.weekdays{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom:10px;
+    font-weight:600;
+    color:#d81b60;
+}
+
+/* Dates grid */
+.days{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:10px;
+}
+
+/* Day box */
+.day{
+    padding:15px 0;
+    background:#fff0f6;
+    border-radius:12px;
+    transition:0.3s ease;
+    cursor:pointer;
+    font-weight:500;
+}
+
+.day:hover{
+    background:#f8bbd0;
+    transform:translateY(-4px);
+}
+
+/* Empty boxes */
+.empty{
+    background:transparent;
+    cursor:default;
+}
+
+/* Highlight 8 March */
+.highlight{
+    background:#e91e63;
+    color:white;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(233,30,99,0.4);
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:10px 20px;
+    background:#e91e63;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#c2185b;
+}
+</style>
+</head>
+<body>
+
+<div class="calendar-card">
+    <h1>March 2026</h1>
+
+    <div class="weekdays">
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+        <div>Sun</div>
+    </div>
+
+    <div class="days">
+        <div class="day empty"></div>
+        <div class="day empty"></div>
+        <div class="day empty"></div>
+        <div class="day empty"></div>
+        <div class="day empty"></div>
+        <div class="day empty"></div>
+        <div class="day">1</div>
+
+        <div class="day">2</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day">6</div>
+        <div class="day">7</div>
+        <div class="day highlight"><a href="./page3.html">8</a></div>
+
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day">11</div>
+        <div class="day">12</div>
+        <div class="day">13</div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+
+        <div class="day">16</div>
+        <div class="day">17</div>
+        <div class="day">18</div>
+        <div class="day">19</div>
+        <div class="day">20</div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+
+        <div class="day">23</div>
+        <div class="day">24</div>
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day">27</div>
+        <div class="day">28</div>
+        <div class="day">29</div>
+
+        <div class="day">30</div>
+        <div class="day">31</div>
+    </div>
+
+    
+</div>
+
+</body>
+</html>
